@@ -1,0 +1,33 @@
+.container {
+    max-width: 550px; 
+}
+
+.jogadas {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10px 0;
+}
+
+.jogadas li {
+    font-size: 1.2rem;
+}
+
+#jogada::before {
+    content: "Sua Jogada: ";
+    color: var(--bs-body-secondary); 
+    font-size: 0.9rem;
+}
+
+#retorno::before {
+    content: "Máquina Jogou: ";
+    color: var(--bs-body-secondary); 
+    font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+    .d-flex.flex-wrap > .btn {
+        min-width: 100%; 
+    }
+}
